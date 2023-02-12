@@ -7,17 +7,17 @@ const client = new Client({
 
 const sendMessage = (client) => {
     const number = "+7471232552";
-    const meNumber = "+77059943864"
+    const meNumber = "+77028363117"
 
     // Your message.
-    const text = "Здравствуйте я хочу записаться на Cycling в 19:00 и на Stretching";
-
-    const chatId = meNumber.substring(1) + "@c.us";
+    const text = "ЗдЗдравствуйте я хочу записаться на Cycling в 19:00 и на Stretching
+Бакдаулет, и 87028363117 Айгерим хочу записаться на Cycling в 19:00 и на Stret
+    const chatId = number.substring(1) + "@c.us";
 
     client.sendMessage(chatId, text);
 }
 
-const job = new CronJob('10 58 09 * * 1,5', function () {
+const job = new CronJob('00 00 00 * * *', function () {
     sendMessage(client);
     console.log('Message sended');
 }, null, false, 'Asia/Almaty');
