@@ -1,0 +1,7 @@
+version: "3.0"
+
+services:
+  auto_r:
+    build: .
+    volumes:
+      - ./:/home/app

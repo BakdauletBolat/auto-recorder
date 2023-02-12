@@ -10,16 +10,15 @@ const sendMessage = (client) => {
     const meNumber = "+77028363117"
 
     // Your message.
-    const text = "ЗдЗдравствуйте я хочу записаться на Cycling в 19:00 и на Stretching
-Бакдаулет, и 87028363117 Айгерим хочу записаться на Cycling в 19:00 и на Stret
+    const text = "Здравствуйте я хочу записаться на Cycling в 19:00 \n" +
+        "Бакдаулет, и 87028363117 Айгерим"
     const chatId = number.substring(1) + "@c.us";
-
     client.sendMessage(chatId, text);
 }
 
-const job = new CronJob('00 00 00 * * *', function () {
+const job = new CronJob('10 00 07 * * 1,5', function () {
     sendMessage(client);
-    console.log('Message sended');
+    console.log('Message sended success деп ойлайм енды');
 }, null, false, 'Asia/Almaty');
 
 
