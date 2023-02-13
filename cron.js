@@ -6,10 +6,9 @@ const client = new Client({
 });
 
 const sendMessage = (client) => {
-    const number = "+7471232552";
+    const number = "+77471232552";
     const meNumber = "+77028363117"
 
-    // Your message.
     const text = "Здравствуйте я хочу записаться на Cycling в 19:00 \n" +
         "Бакдаулет, и 87028363117 Айгерим"
     const chatId = number.substring(1) + "@c.us";
